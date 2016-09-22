@@ -1,7 +1,7 @@
 # React Native Highlight Words
 React Native component used to highlight words within a larger body of text. This is a port of [react-highlight-words](https://github.com/bvaughn/react-highlight-words).
 
-Check out a demo using Exponent [here](https://getexponent.com/@clauderic/react-native-highlight-words).
+Check out a [demo](https://getexponent.com/@clauderic/react-native-highlight-words) using Exponent.
 
 ## Installation
 Using [npm](https://www.npmjs.com/package/react-native-highlight-words):
