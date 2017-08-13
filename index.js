@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import {Text, TouchableOpacity} from 'react-native';
+import {Text} from 'react-native';
 import {findAll} from 'highlight-words-core';
 
 Highlighter.propTypes = {
@@ -36,14 +36,13 @@ export default function Highlighter({
                 return (!chunk.highlight)
                     ? text
                     : (
-                        <TouchableOpacity onPress={() => onSearchWordTap(text)}>
-                            <Text
-                                key={index}
-                                style={chunk.highlight && highlightStyle}
-                            >
-                                {text}
-                            </Text>
-                        </TouchableOpacity>
+                        <Text
+                            key={index}
+                            onPress={() => onSearchWordTap(text)}
+                            style={chunk.highlight && highlightStyle}
+                        >
+                            {text}
+                        </Text>
                     );
             })}
         </Text>
