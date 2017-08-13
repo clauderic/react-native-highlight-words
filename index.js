@@ -2,6 +2,10 @@ import React, {PropTypes} from 'react';
 import {Text} from 'react-native';
 import {findAll} from 'highlight-words-core';
 
+Highlighter.defaultProps = {
+    onSearchWordTap : () => {}
+}
+    
 Highlighter.propTypes = {
     autoEscape: PropTypes.bool,
     highlightStyle: Text.propTypes.style,
