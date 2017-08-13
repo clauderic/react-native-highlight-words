@@ -1,5 +1,5 @@
 import React, {PropTypes} from 'react';
-import {Text} from 'react-native';
+import {Text, TouchableOpacity} from 'react-native';
 import {findAll} from 'highlight-words-core';
 
 Highlighter.propTypes = {
@@ -8,7 +8,8 @@ Highlighter.propTypes = {
     searchWords: PropTypes.arrayOf(PropTypes.string).isRequired,
     textToHighlight: PropTypes.string.isRequired,
     sanitize: PropTypes.func,
-    style: Text.propTypes.style
+    style: Text.propTypes.style,
+    onSearchWordTap : PropTypes.func
 };
 
 /**
@@ -22,6 +23,7 @@ export default function Highlighter({
     textToHighlight,
     sanitize,
     style,
+    onSearchWordTap,
     ...props
 }) {
     const chunks = findAll({textToHighlight, searchWords, sanitize, autoEscape});
@@ -34,12 +36,14 @@ export default function Highlighter({
                 return (!chunk.highlight)
                     ? text
                     : (
-                        <Text
-                            key={index}
-                            style={chunk.highlight && highlightStyle}
-                        >
-                            {text}
-                        </Text>
+                        <TouchableOpacity onPress={() => onSearchWordTap(text)}>
+                            <Text
+                                key={index}
+                                style={chunk.highlight && highlightStyle}
+                            >
+                                {text}
+                            </Text>
+                        </TouchableOpacity>
                     );
             })}
         </Text>
