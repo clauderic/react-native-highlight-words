@@ -39,6 +39,7 @@ And the `Highlighter` component will highlight all occurrences of search terms w
 | style           | Object        |           | Styles applied to the text wrapper                                                                                      |
 | textToHighlight | String        |     ✓     | Text to highlight matches in                                                                                            |
 
-
 ## License
 MIT License - fork, modify and use however you want.
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/oN9PDWZz8fQcbh9sxpDEUvD5/clauderic/react-native-highlight-words'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/oN9PDWZz8fQcbh9sxpDEUvD5/clauderic/react-native-highlight-words.svg' /></a>
