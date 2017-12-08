@@ -31,6 +31,10 @@
   },
   "homepage": "https://github.com/clauderic/react-native-highlight-words",
   "dependencies": {
-    "highlight-words-core": "^1.0.3"
+    "highlight-words-core": "^1.0.3",
+     "prop-types": "^15.5.7"
+  },
+  "peerDependencies": {
+    "react": "^15.5.0"
   }
 }
