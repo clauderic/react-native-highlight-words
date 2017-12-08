@@ -1,6 +1,6 @@
 {
   "name": "react-native-highlight-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Native port of react-highlight-words. This component is used to highlight words within a larger body of text.",
   "main": "index.js",
   "scripts": {
