@@ -3,13 +3,18 @@ import {Text} from 'react-native';
 import {findAll} from 'highlight-words-core';
 import PropTypes from 'prop-types';
 
+Highlighter.defaultProps = {
+    onSearchWordTap : () => {}
+}
+    
 Highlighter.propTypes = {
     autoEscape: PropTypes.bool,
     highlightStyle: Text.propTypes.style,
     searchWords: PropTypes.arrayOf(PropTypes.string).isRequired,
     textToHighlight: PropTypes.string.isRequired,
     sanitize: PropTypes.func,
-    style: Text.propTypes.style
+    style: Text.propTypes.style,
+    onSearchWordTap : PropTypes.func
 };
 
 /**
@@ -23,6 +28,7 @@ export default function Highlighter({
     textToHighlight,
     sanitize,
     style,
+    onSearchWordTap,
     ...props
 }) {
     const chunks = findAll({textToHighlight, searchWords, sanitize, autoEscape});
@@ -37,6 +43,7 @@ export default function Highlighter({
                     : (
                         <Text
                             key={index}
+                            onPress={() => onSearchWordTap(text)}
                             style={chunk.highlight && highlightStyle}
                         >
                             {text}
