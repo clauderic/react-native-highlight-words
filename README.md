@@ -32,7 +32,7 @@ import Highlighter from "rn-highlight-words";
 
 And the `Highlighter` component will highlight all occurrences of search terms within the text:
 
-<img width="368" alt="screen shot 2015-12-19 at 8 23 43 am" src="https://cloud.githubusercontent.com/assets/29597/11914033/e3c319f6-a629-11e5-896d-1a5ce22c9ea2.png">
+<img src="https://github.com/adityasonel/rn-highlight-words/blob/master/sample.gif">
 
 And if you want to get highlighted text that clicked, get in `onPressHighlightedText` as
 
