@@ -9,6 +9,8 @@ Highlighter.propTypes = {
     searchWords: PropTypes.arrayOf(PropTypes.string).isRequired,
     textToHighlight: PropTypes.string.isRequired,
     sanitize: PropTypes.func,
+    onPressNormalText = PropTypes.func,
+    onPressHighlightedText = PropTypes.func,
     style: Text.propTypes.style
 };
 
@@ -22,20 +24,22 @@ export default function Highlighter({
     searchWords,
     textToHighlight,
     sanitize,
+    onPressNormalText,
+    onPressHighlightedText,
     style,
     ...props
 }) {
     const chunks = findAll({textToHighlight, searchWords, sanitize, autoEscape});
 
     return (
-        <Text style={style} {...props}>
+        <Text style={style} {...props} onPress = {onPressNormalText} >
             {chunks.map((chunk, index) => {
                 const text = textToHighlight.substr(chunk.start, chunk.end - chunk.start);
-
                 return (!chunk.highlight)
                     ? text
                     : (
                         <Text
+                            onPress = {() => onPressHighlightedText(text)}
                             key={index}
                             style={chunk.highlight && highlightStyle}
                         >
