@@ -1,6 +1,6 @@
 {
-    "name": "react-native-highlight-words",
-    "version": "1.0.1",
+    "name": "rn-highlight-words",
+    "version": "1.0.2",
     "description": "A React Native port of react-highlight-words. This component is used to highlight words within a larger body of text.",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/adityasonel/react-native-highlight-words.git"
+        "url": "https://github.com/adityasonel/rn-highlight-words.git"
     },
     "keywords": [
         "react-native",
@@ -27,9 +27,9 @@
     "author": "Aditya Sonel",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/adityasonel/react-native-highlight-words/issues"
+        "url": "https://github.com/adityasonel/rn-highlight-words/issues"
     },
-    "homepage": "https://github.com/adityasonel/react-native-highlight-words",
+    "homepage": "https://github.com/adityasonel/rn-highlight-words",
     "dependencies": {
         "highlight-words-core": "^1.0.3",
         "prop-types": "^15.5.7"

@@ -35,7 +35,6 @@ export default function Highlighter({
         <Text style={style} {...props} onPress = {onPressNormalText} >
             {chunks.map((chunk, index) => {
                 const text = textToHighlight.substr(chunk.start, chunk.end - chunk.start);
-
                 return (!chunk.highlight)
                     ? text
                     : (
