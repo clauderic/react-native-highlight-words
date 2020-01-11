@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidsonsns/react-native-highlight-words.git"
+    "url": "https://github.com/clauderic/react-native-highlight-words.git"
   },
   "keywords": [
     "react-native",
@@ -28,12 +28,12 @@
   "author": "Clauderic Demers <https://github.com/clauderic/react-native-highlight-words>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidsonsns/react-native-highlight-words/issues"
+    "url": "https://github.com/clauderic/react-native-highlight-words/issues"
   },
   "contributors": [
     "Davidson Nascimento <https://github.com/davidsonsns>"
   ],
-  "homepage": "https://github.com/davidsonsns/react-native-highlight-words",
+  "homepage": "https://github.com/clauderic/react-native-highlight-words",
   "dependencies": {
     "highlight-words-core": "^1.0.3",
     "prop-types": "^15.5.7"
