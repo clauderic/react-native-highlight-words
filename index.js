@@ -2,14 +2,15 @@ import React from 'react';
 import {Text} from 'react-native';
 import {findAll} from 'highlight-words-core';
 import PropTypes from 'prop-types';
+import { TextPropTypes } from 'deprecated-react-native-prop-types'
 
 Highlighter.propTypes = {
     autoEscape: PropTypes.bool,
-    highlightStyle: Text.propTypes.style,
+    highlightStyle: TextPropTypes ? TextPropTypes.style : Text.propTypes?.style,
     searchWords: PropTypes.arrayOf(PropTypes.string).isRequired,
     textToHighlight: PropTypes.string.isRequired,
     sanitize: PropTypes.func,
-    style: Text.propTypes.style
+    style: TextPropTypes ? TextPropTypes.style : Text.propTypes?.style
 };
 
 /**
