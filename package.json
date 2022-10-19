@@ -1,6 +1,6 @@
 {
-  "name": "react-native-highlight-words",
-  "version": "1.0.1",
+  "name": "@javier.alejandro.castro/react-native-highlight-words",
+  "version": "2.0.0",
   "description": "A React Native port of react-highlight-words. This component is used to highlight words within a larger body of text.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/clauderic/react-native-highlight-words.git"
+    "url": "https://github.com/jacargentina/react-native-highlight-words.git"
   },
   "keywords": [
     "react-native",
@@ -25,15 +25,16 @@
     "occurrences",
     "search"
   ],
-  "author": "Clauderic Demers",
+  "author": "Claudéric Demers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clauderic/react-native-highlight-words/issues"
+    "url": "https://github.com/jacargentina/react-native-highlight-words/issues"
   },
   "contributors": [
+    "Javier Castro <https://github.com/jacargentina>",
     "Davidson Nascimento <https://github.com/davidsonsns>"
   ],
-  "homepage": "https://github.com/clauderic/react-native-highlight-words",
+  "homepage": "https://github.com/jacargentina/react-native-highlight-words",
   "dependencies": {
     "deprecated-react-native-prop-types": "^2.3.0",
     "highlight-words-core": "^1.2.2",
