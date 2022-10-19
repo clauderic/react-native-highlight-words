@@ -2,54 +2,82 @@
 # yarn lockfile v1
 
 
-"@types/prop-types@*":
-  version "15.7.3"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+"@react-native/normalize-color@*":
+  "version" "2.0.0"
 
-"@types/react-native@^0.60.30":
-  version "0.60.30"
-  resolved "https://registry.npmjs.org/@types/react-native/-/react-native-0.60.30.tgz#33ab525194142a5e3b428e60f0e77e0d1dbd253d"
+"@types/prop-types@*":
+  "integrity" "sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w=="
+  "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
+  "version" "15.7.5"
+
+"@types/react-native@^0.70.6":
+  "integrity" "sha512-ynQ2jj0km9d7dbnyKqVdQ6Nti7VQ8SLTA/KKkkS5+FnvGyvij2AOo1/xnkBR/jnSNXuzrvGVzw2n0VWfppmfKw=="
+  "resolved" "https://registry.npmjs.org/@types/react-native/-/react-native-0.70.6.tgz"
+  "version" "0.70.6"
   dependencies:
-    "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.17":
-  version "16.9.17"
-  resolved "https://registry.npmjs.org/@types/react/-/react-16.9.17.tgz#58f0cc0e9ec2425d1441dd7b623421a867aa253e"
+"@types/react@*", "@types/react@^18.0.21":
+  "integrity" "sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.21.tgz"
+  "version" "18.0.21"
   dependencies:
     "@types/prop-types" "*"
-    csstype "^2.2.0"
+    "@types/scheduler" "*"
+    "csstype" "^3.0.2"
 
-csstype@^2.2.0:
-  version "2.6.8"
-  resolved "https://registry.npmjs.org/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
+"@types/scheduler@*":
+  "integrity" "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="
+  "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
+  "version" "0.16.2"
 
-highlight-words-core@^1.0.3:
-  version "1.2.2"
-  resolved "https://registry.npmjs.org/highlight-words-core/-/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
+"csstype@^3.0.2":
+  "integrity" "sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw=="
+  "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
+  "version" "3.1.1"
+
+"deprecated-react-native-prop-types@^2.3.0":
+  "version" "2.3.0"
+  dependencies:
+    "@react-native/normalize-color" "*"
+    "invariant" "*"
+    "prop-types" "*"
+
+"highlight-words-core@^1.2.2":
+  "version" "1.2.2"
+
+"invariant@*":
+  "version" "2.2.4"
+  dependencies:
+    "loose-envify" "^1.0.0"
 
 "js-tokens@^3.0.0 || ^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  "resolved" "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz"
+  "version" "4.0.0"
 
-loose-envify@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+"loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.4.0":
+  "resolved" "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz"
+  "version" "1.4.0"
   dependencies:
-    js-tokens "^3.0.0 || ^4.0.0"
+    "js-tokens" "^3.0.0 || ^4.0.0"
 
-object-assign@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+"object-assign@^4.1.1":
+  "resolved" "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+  "version" "4.1.1"
 
-prop-types@^15.5.7:
-  version "15.7.2"
-  resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+"prop-types@*", "prop-types@^15.8.1":
+  "version" "15.8.1"
   dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.8.1"
+    "loose-envify" "^1.4.0"
+    "object-assign" "^4.1.1"
+    "react-is" "^16.13.1"
 
-react-is@^16.8.1:
-  version "16.12.0"
-  resolved "https://registry.npmjs.org/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
+"react-is@^16.13.1":
+  "version" "16.13.1"
+
+"react@^18.0.0":
+  "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
+  "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
+  "version" "18.2.0"
+  dependencies:
+    "loose-envify" "^1.1.0"

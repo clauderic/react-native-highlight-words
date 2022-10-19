@@ -18,6 +18,16 @@ type HighlighterProps = {
   sanitize?: (text: string) => string;
 
   /**
+   * This function is called on press.
+   */
+  onPress?: ((event: GestureResponderEvent) => void) | undefined;
+
+  /**
+   * This function is called on press of the highlighted text.
+   */
+  onPressHighlighted?: ((text: string) => void) | undefined;
+
+  /**
    * Array of search words
    */
   searchWords: string[];

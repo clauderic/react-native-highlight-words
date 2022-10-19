@@ -30,14 +30,16 @@ And the `Highlighter` component will highlight all occurrences of search terms w
 
 ## Props
 
-| Property        | Type          | Required? | Description                                                                                                             |
-|:----------------|:--------------|:---------:|:------------------------------------------------------------------------------------------------------------------------|
-| autoEscape      | Boolean       |           | Escape characters which are meaningful in regular expressions                                                           |
-| highlightStyle  | Object        |           | Styles applied to highlighted text                                                                                      |
-| sanitize        | Function      |           | Process each search word and text to highlight before comparing (eg remove accents); signature `(text: string): string` |
-| searchWords     | Array<String> |     ✓     | Array of search words                                                                                                   |
-| style           | Object        |           | Styles applied to the text wrapper                                                                                      |
-| textToHighlight | String        |     ✓     | Text to highlight matches in                                                                                            |
+| Property           | Type          | Required? | Description                                                                                                             |
+|:-------------------|:--------------|:---------:|:------------------------------------------------------------------------------------------------------------------------|
+| autoEscape         | Boolean       |           | Escape characters which are meaningful in regular expressions                                                           |
+| highlightStyle     | Object        |           | Styles applied to highlighted text                                                                                      |
+| sanitize           | Function      |           | Process each search word and text to highlight before comparing (eg remove accents); signature `(text: string): string` |
+| searchWords        | Array<String> |     ✓     | Array of search words                                                                                                   |
+| style              | Object        |           | Styles applied to the text wrapper                                                                                      |
+| textToHighlight    | String        |     ✓     | Text to highlight matches in                                                                                            |
+| onPress            | Function      |           | onPress event for normal text                                                                                           |
+| onPressHighlighted | Function      |           | onPress event for highlighted text (returns text that clicked)                                                          |
 
 ## License
 MIT License - fork, modify and use however you want.
